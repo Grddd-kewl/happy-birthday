@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Happy Birthday Nadhine</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- FONT -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+  <!-- JS -->
+  <script src="js/jquery.js"></script>
+  <script src="js/birthday.js"></script>
+  <script src="js/hbd.js"></script>
+
+  <style>
+    body {
+      margin: 0;
+      background: linear-gradient(to bottom, #ffffff, #f5f5f5);
+      font-family: "Courier New", monospace;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      overflow-x: hidden;
+      padding-bottom: 50px; /* biar footer nggak nutup */
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 50px;
+      max-width: 1000px;
+      width: 90%;
+      animation: fadeIn 2s ease forwards;
+      opacity: 0;
+    }
+
+    #code {
+      max-width: 520px;
+      font-size: 14px;
+      line-height: 1.7;
+      color: #333;
+    }
+
+    #loveHeart {
+      background: url("smile.gif") no-repeat center;
+      background-size: contain;
+      width: 300px;
+      height: 300px;
+    }
+
+    /* Fade animation */
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+
+    /* Footer */
+    #footer {
+      position: fixed;
+      bottom: 15px;
+      width: 100%;
+      text-align: center;
+      font-family: "Montserrat", sans-serif;
+      font-size: 13px;
+      color: #777;
+      opacity: 0.8;
+    }
+
+    #footer a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    #footer a:hover {
+      color: royalblue;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      body {
+        align-items: flex-start;
+        padding-top: 40px;
+      }
+
+      .container {
+        flex-direction: column;
+        gap: 30px;
+      }
+
+      #loveHeart {
+        width: 200px;
+        height: 200px;
+      }
+
+      #code {
+        font-size: 13px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    
+    <div id="code">
+      <span>/**</span><br />
+      <span>* hai din, happy birthday!</span><br />
+      <span>// semoga kamu sehat selalu. jangan lupa makan 2x sehari, minum vitamin, dan jangan sering makan pedes ya.</span><br />
+      <span>// aku harap semua yang kamu inginkan bisa terwujud.</span><br /><br />
+
+      <span>* also, there's something i want to say:</span><br />
+      <span>// i still remember the first time we met</span><br />
+      <span>// it was awkward in a funny way...</span><br />
+      <span>// but somehow, you became someone important to me.</span><br /><br />
+      
+      <span>// you were the reason why my problems didn't seem so heavy, the reason i found my motivation again.</span><br /><br />
+
+      <span>// you made my life better just by being in it</span><br />
+      <span>// especially when things felt really heavy</span><br /><br />
+
+      <span>*  over the past few months, i learned a lot from you.</span><br />
+      <span>// and from all of that, i realized something.... </span><br />
+      <span>// i realized that i still have a lot to figure out about myself.</span><br />
+      <span>// and maybe things just aren't meant to be — at least not now.</span><br /><br />
+
+      <span>* every story has its own ending, even the ones that never really began.</span><br />
+      <span>// i'm sorry for everything that i did,</span><br />
+      <span>// especially for the things that i didn't</span><br />
+      <span>// i'm sorry if i ever made things difficult for you.</span><br /><br />
+      
+      <span>// i just hope you find your own happiness, truly and completely</span><br />
+      <span>// even if things didn't turn out the way i hoped.</span><br /><br />
+
+      <span>* maybe in another life, things would've been different.</span><br /><br />
+
+      <span>like 510 said in "Esa" (2:37 - 2:52)</span><br /><br />
+      <span>"dan biarkan semua yang telah terjadi</span><br />
+      <span>melukiskan kenangan antar dimensi</span><br />
+      <span>untuk semua yang telah kita lalui</span><br />
+      <span>terima kasih kau telah singgah di hidup ini."</span><br /><br />
+
+      <span>// my best wishes will always be with you.</span><br /><br />
+
+      <span>System.out.println("the sunset is beautiful, isn't it?");</span><br /><br />
+
+      <span>— Dirga "Diga" F.</span>
+    </div>
+
+    <div id="loveHeart"></div>
+
+  </div>
+
+  <!-- Footer -->
+  <div id="footer">
+    Made with love by 
+    <a href="https://www.instagram.com/grddd__/" target="_blank">Dirga</a>
+  </div>
+
+  <!-- Audio (optional) -->
+  <audio autoplay loop>
+    <source src="song.mp3" type="audio/mpeg">
+  </audio>
+
+  <script>
+    $("#code").typewriter();
+  </script>
+
+</body>
+</html>
